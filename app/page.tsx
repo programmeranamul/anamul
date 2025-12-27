@@ -1,6 +1,9 @@
-import { Theme } from "@/components/navbar/Theme";
-import Image from "next/image";
+import HeroSection from "@/components/HeroSection"
 
 export default function Home() {
-  return <>Hello World  <Theme /></>;
+  return <>
+  <HeroSection />
+
+  <div className="w-full h-200"></div>
+  </>;
 }

@@ -36,7 +36,7 @@ export default function RootLayout({
           defaultTheme="dark"
           disableTransitionOnChange
         >
-          <main>
+          <main className="container mx-auto">
             <Navbar />
             {children}
           </main>
