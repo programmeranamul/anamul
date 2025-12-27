@@ -11,7 +11,7 @@ body {
   --radius: 0.625rem;
   --background: oklch(1 0 0);
   --foreground: oklch(0.145 0 0);
- 
+
   --primary: #fca5a5;
   --primary-foreground: oklch(0.985 0 0);
   --secondary: oklch(0.97 0 0);
@@ -25,7 +25,8 @@ body {
   --primary-foreground: oklch(0.205 0 0);
   --secondary: hsl(213, 4%, 60%);
   --secondary-foreground: #9e9698;
-  --feature-card: 0 0 0 1px rgba(255,255,255,.06),0 -1px rgba(255,255,255,.1)
+  --feature-card: 0 0 0 1px rgba(255, 255, 255, 0.06),
+    0 -1px rgba(255, 255, 255, 0.1);
 }
 
 @theme {
@@ -40,7 +41,7 @@ body {
   --font-space-grotesk: var(--font-space-grotesk), sans-serif;
 }
 
-@theme inline {  
+@theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --color-card: var(--card);
@@ -53,10 +54,7 @@ body {
   --color-secondary-foreground: var(--secondary-foreground);
 }
 
-
-
 @layer base {
- 
   body {
     @apply bg-background text-foreground;
   }

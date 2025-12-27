@@ -4,7 +4,7 @@ import { Theme } from "./Theme";
 
 function Index() {
   return (
-    <nav className="w-full flex-between p-6 gap-6 bg-background/30">
+    <nav className="w-full flex-between p-6  gap-6 bg-background/30 fixed top-0 left-0 right-0 z-20 max-w-250  mx-auto">
       <Link href="/">
         <p className="font-space-grotesk h2-bold text-dark-100 dark:text-light-900 ">
           <span className="text-primary-500">A</span>namuL

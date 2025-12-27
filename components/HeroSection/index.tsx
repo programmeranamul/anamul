@@ -3,9 +3,12 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
+const btnClass =
+  "inline-flex px-4 py-3 cursor-pointer font-medium text-foreground items-center gap-3 transition-all hover:translate-y-0.5 shadow-feature-card border border-foreground/5 rounded-xl bg-background";
+
 function Index() {
   return (
-    <section id="hero" className="flex">
+    <section id="hero" className="flex gap-8 sm:gap-12 relative pt-36 pb-16">
       <div className=" ">
         <div className="p-3 bg-linear-to-r from-primary/10 dark:from-primary/5 to-transparent -ml-3 mb-4 sm:mb-6">
           <div className="rounded-l-full px-4 py-2.5 sm:px-6 sm:py-3.5 inline-flex items-center gap-4 bg-linear-to-r from-primary/70 to-transparent">
@@ -63,19 +66,19 @@ function Index() {
           </div>
         </div>
 
-        <div>
-          <button className="inline-flex px-4 py-3 cursor-pointer font-medium text-foreground items-center gap-3 transition-all hover:translate-y-0.5 shadow-feature-card border border-foreground/5 rounded-xl bg-background">
+        <div className="flex gap-2 sm:gap-4 mt-6 sm:mt-10">
+          <button className={btnClass}>
             <span>Learn More</span>
             <span>
               <ArrowDown />
             </span>
           </button>
-          <button>More about me</button>
+          <button className={btnClass}>More about me</button>
         </div>
       </div>
 
       {/* image */}
-      <div className="hidden md:flex items-center justify-center w-full max-w-37.5 sm:max-w-45 md:max-w-50 lg:max-w-62.5 shrink-0 "></div>
+      <div className="hidden md:flex items-center justify-center w-full max-w-37.5 sm:max-w-45 md:max-w-50 lg:max-w-65 shrink-0 bg-primary-500"></div>
     </section>
   );
 }

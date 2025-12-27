@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import { ThemeProvider } from "next-themes";
 import Navbar from "@/components/navbar";
+import BackgroundGradient from "@/components/BackgroundGradient";
 
 import "./globals.css";
 
@@ -29,14 +30,15 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body
-        className={`${inter.className} ${spaceGrotesk.variable} antialiased`}
+        className={`${inter.className} ${spaceGrotesk.variable} antialiased relative`}
       >
         <ThemeProvider
           attribute="class"
           defaultTheme="dark"
           disableTransitionOnChange
         >
-          <main className="container mx-auto">
+          <BackgroundGradient />
+          <main className="max-w-250 px-6 mx-auto relative z-10">
             <Navbar />
             {children}
           </main>
