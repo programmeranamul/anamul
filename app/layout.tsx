@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import { ThemeProvider } from "next-themes";
+import Navbar from "@/components/navbar";
 
 import "./globals.css";
 
@@ -33,10 +34,12 @@ export default function RootLayout({
         <ThemeProvider
           attribute="class"
           defaultTheme="dark"
-          // enableSystem
           disableTransitionOnChange
         >
-          {children}
+          <main>
+            <Navbar />
+            {children}
+          </main>
         </ThemeProvider>
       </body>
     </html>
