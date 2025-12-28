@@ -6,6 +6,7 @@ import {
   Youtube,
   Clock,
   Heart,
+  MoveRight,
 } from "lucide-react";
 import Image from "next/image";
 import React from "react";
@@ -134,6 +135,16 @@ function AboutSection() {
             </div>
           </div>
         </div>
+      </div>
+
+      <div className="my-8 flex items-center justify-center">
+        <a
+          href="#"
+          className="text-secondary-foreground mt-16 transition-colors duration-200  hover:text-primary-500 flex items-center justify-center gap-4"
+        >
+          <span>Know more about me</span>
+          <MoveRight size={16} className="mt-0.5"/>
+        </a>
       </div>
     </section>
   );
