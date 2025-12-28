@@ -25,6 +25,7 @@ body {
   --primary-foreground: oklch(0.205 0 0);
   --secondary: hsl(213, 4%, 60%);
   --secondary-foreground: #9e9698;
+  --muted-foreground: #9ca3af;
   --feature-card: 0 0 0 1px rgba(255, 255, 255, 0.06),
     0 -1px rgba(255, 255, 255, 0.1);
 }
@@ -52,6 +53,7 @@ body {
   --color-primary-foreground: var(--primary-foreground);
   --color-secondary: var(--secondary);
   --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted-foreground: var(--muted-foreground);
 }
 
 @layer base {
