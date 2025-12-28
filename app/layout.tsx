@@ -5,6 +5,7 @@ import Navbar from "@/components/navbar";
 import BackgroundGradient from "@/components/BackgroundGradient";
 
 import "./globals.css";
+import Footer from "@/components/Layout/Footer";
 
 const inter = localFont({
   src: "./fonts/InterVF.ttf",
@@ -41,6 +42,7 @@ export default function RootLayout({
           <main className="max-w-250 px-6 mx-auto relative z-10">
             <Navbar />
             {children}
+            <Footer />
           </main>
         </ThemeProvider>
       </body>

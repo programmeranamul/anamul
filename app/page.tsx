@@ -6,6 +6,5 @@ export default function Home() {
   <HeroSection />
   <AboutSection />
 
-  <div className="w-full h-200"></div>
   </>;
 }
