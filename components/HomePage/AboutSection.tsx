@@ -10,6 +10,9 @@ import {
 import Image from "next/image";
 import React from "react";
 import RustImage from "../HeroSection/RustImage";
+import Marquee from "react-fast-marquee";
+import Iconimg from "../HeroSection/Iconimg";
+import { Item } from "@radix-ui/react-dropdown-menu";
 
 const socialLinks = [
   {
@@ -34,11 +37,48 @@ const socialLinks = [
   },
 ];
 
+const iconList = [
+  { icon: <Iconimg /> },
+  { icon: <Iconimg /> },
+  { icon: <Iconimg /> },
+  { icon: <Iconimg /> },
+  { icon: <Iconimg /> },
+  { icon: <Iconimg /> },
+];
+
 function AboutSection() {
   return (
     <section className="px-6 py-16">
-      <div className="grid grid-cols-2">
-        <div></div>
+      <div className="grid grid-cols-2 mt-12 gap-4">
+        <div className="flex z-30 h-64 flex-col gap-6 overflow-hidden bg-background/90 rounded-xl p-4 shadow-feature-card lg:p-6">
+          <div>
+            <h3 className="text-base font-medium">Languages and Tools</h3>
+          </div>
+          <div className="flex overflow-hidden">
+            <Marquee pauseOnHover={true}>
+              {iconList.map((Item, index) => (
+                <div
+                  key={index}
+                  className="flex items-center justify-center size-14 shadow-feature-card rounded-xl mr-6"
+                >
+                  {Item.icon}
+                </div>
+              ))}
+            </Marquee>
+          </div>
+          <div className="flex overflow-hidden">
+            <Marquee direction="right" pauseOnHover={true}>
+              {iconList.map((Item, index) => (
+                <div
+                  key={index}
+                  className="flex items-center justify-center size-14 shadow-feature-card rounded-xl mr-6"
+                >
+                  {Item.icon}
+                </div>
+              ))}
+            </Marquee>
+          </div>
+        </div>
         <div className="grid gap-6">
           <div className="p-4 rounded-xl shadow-feature-card lg:p-6 flex flex-col gap-5">
             <div className="flex gap-2 items-center">
@@ -76,7 +116,7 @@ function AboutSection() {
                 <p className="text-sm font-medium">Coding Hours</p>
               </div>
               <div>
-                <h3 className="text-3xl font-semibold">10,500+ hrs</h3>
+                <h3 className="text-2xl font-semibold">10,500+ hrs</h3>
                 <p className="text-sm font-normal mt-2">
                   Experience : ~4.5 years
                 </p>
