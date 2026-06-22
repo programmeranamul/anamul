@@ -1,13 +1,17 @@
+export const hero = {
+  subTitle: "Open to work · Immediate Joiner", 
+}
+
 export const profile = {
-  name: 'Aarav Mehta',
-  firstName: 'Aarav',
+  name: 'Anamul',
+  firstName: 'Anamul Hoque',
   role: 'Full Stack MERN Developer',
   tagline:
     'I build scalable web applications using modern technologies — from pixel-perfect interfaces to robust APIs.',
-  email: 'aarav.mehta.dev@gmail.com',
-  github: 'https://github.com',
-  linkedin: 'https://linkedin.com',
-  location: 'Remote · Bengaluru, India',
+  email: 'programmer.anamul@gmail.com',
+  github: 'https://github.com/programmeranamul',
+  linkedin: 'https://www.linkedin.com/in/anamul-dev/',
+  location: 'Remote · Gaibandha, Bangladsh',
 }
 
 export const navLinks = [

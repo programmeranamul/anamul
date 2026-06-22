@@ -15,10 +15,9 @@ const jetbrainsMono = JetBrains_Mono({
 })
 
 export const metadata: Metadata = {
-  title: 'Aarav Mehta — Full Stack MERN Developer',
+  title: 'Anamul — Full Stack MERN Developer',
   description:
-    'Portfolio of Aarav Mehta, a Full Stack MERN Developer building scalable, modern web applications with React, Next.js, Node.js and MongoDB.',
-  generator: 'v0.app',
+    'Portfolio of Anamul, a Full Stack MERN Developer building scalable, modern web applications with React, Next.js, Node.js and MongoDB.',
   icons: {
     icon: [
       {

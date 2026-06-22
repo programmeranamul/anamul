@@ -7,7 +7,7 @@ import { useGSAP } from '@gsap/react'
 import { ArrowRight, Mail } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import { GithubIcon, LinkedinIcon } from '@/components/social-icons'
-import { profile } from '@/lib/site-data'
+import { hero, profile } from '@/lib/site-data'
 
 if (typeof window !== 'undefined') {
   gsap.registerPlugin(ScrollTrigger, useGSAP)
@@ -15,7 +15,7 @@ if (typeof window !== 'undefined') {
 
 const codeLines = [
   { t: 'const developer = {', c: 'text-muted-foreground' },
-  { t: "  name: 'Aarav Mehta',", c: 'text-foreground' },
+  { t: "  name: 'Anamul Hoque',", c: 'text-foreground' },
   { t: "  role: 'Full Stack MERN Dev',", c: 'text-foreground' },
   { t: "  stack: ['React','Node','Mongo'],", c: 'text-primary' },
   { t: '  available: true,', c: 'text-foreground' },
@@ -76,10 +76,16 @@ export function Hero() {
         <div>
           <span
             data-hero-item
-            className="inline-flex items-center gap-2 rounded-full border border-border bg-secondary/50 px-3 py-1 text-xs font-medium text-muted-foreground"
+            className="inline-flex items-center gap-2 rounded-full border border-primary/40 bg-primary/10 px-3 py-1 text-xs font-medium text-primary"
           >
-            <span className="size-2 rounded-full bg-primary" />
-            Available for new projects
+            <span className="relative flex size-3">
+              <span className="absolute inline-flex size-full animate-ping rounded-full bg-primary opacity-75" />
+              <span className="relative inline-flex size-3 rounded-full bg-primary" />
+            </span>
+            {
+              hero.subTitle
+            }
+            
           </span>
 
           <h1
