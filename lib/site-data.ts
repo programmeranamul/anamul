@@ -4,14 +4,14 @@ export const hero = {
 
 export const profile = {
   name: 'Anamul',
-  firstName: 'Anamul Hoque',
+  firstName: 'Anamul',
   role: 'Full Stack MERN Developer',
   tagline:
     'I build scalable web applications using modern technologies — from pixel-perfect interfaces to robust APIs.',
   email: 'programmer.anamul@gmail.com',
   github: 'https://github.com/programmeranamul',
   linkedin: 'https://www.linkedin.com/in/anamul-dev/',
-  location: 'Remote · Gaibandha, Bangladsh',
+  location: 'Gaibandha, Bangladsh',
 }
 
 export const navLinks = [

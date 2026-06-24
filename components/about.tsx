@@ -23,7 +23,7 @@ export function About() {
         <Reveal className="glass mx-auto w-full max-w-xs rounded-2xl border border-border p-5 lg:mx-0">
           <div className="relative aspect-square overflow-hidden rounded-xl">
             <Image
-              src="/profile.png"
+              src="/anamul.png"
               alt={`Portrait of ${profile.name}`}
               fill
               sizes="320px"
