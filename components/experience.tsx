@@ -18,7 +18,7 @@ export function Experience() {
               <li key={job.company} className="mb-10 last:mb-0">
                 <Reveal>
                   <span className="absolute -left-[7px] mt-1.5 size-3.5 rounded-full border-2 border-background bg-primary" />
-                  <div className="flex flex-wrap items-baseline justify-between gap-2">
+                  <div className="flex flex-wrap items-baseline justify-between gap-2 ml-4">
                     <h3 className="text-lg font-semibold">
                       {job.role}{' '}
                       <span className="text-muted-foreground">

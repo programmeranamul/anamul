@@ -12,8 +12,8 @@ import { profile } from '@/lib/site-data'
 
 const channels = [
   { icon: Mail, label: 'Email', value: profile.email, href: `mailto:${profile.email}` },
-  { icon: LinkedinIcon, label: 'LinkedIn', value: 'in/aaravmehta', href: profile.linkedin },
-  { icon: GithubIcon, label: 'GitHub', value: 'github.com/aarav', href: profile.github },
+  { icon: LinkedinIcon, label: 'LinkedIn', value: 'in/anamul-dev', href: profile.linkedin },
+  { icon: GithubIcon, label: 'GitHub', value: 'github.com/programmeranamul', href: profile.github },
 ]
 
 export function Contact() {
@@ -90,7 +90,7 @@ export function Contact() {
             <Textarea
               id="message"
               name="message"
-              rows={5}
+              rows={8}
               placeholder="Tell me about your project..."
               required
             />

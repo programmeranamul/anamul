@@ -35,14 +35,23 @@ export const skills = [
 ]
 
 export const projects = [
+  // {
+  //   title: 'TaskFlow',
+  //   subtitle: 'Task Management System',
+  //   description:
+  //     'A Jira/Trello-style project management tool with drag-and-drop boards, real-time updates, role-based access, and team analytics.',
+  //   stack: ['Next.js', 'Node.js', 'MongoDB', 'Socket.IO', 'TypeScript'],
+  //   github: 'https://github.com',
+  //   demo: 'https://example.com',
+  // },
   {
-    title: 'TaskFlow',
-    subtitle: 'Task Management System',
+    title: 'SkillForge',
+    subtitle: 'Developer Community & Career Growth Platform',
     description:
-      'A Jira/Trello-style project management tool with drag-and-drop boards, real-time updates, role-based access, and team analytics.',
+      'Built a full-stack developer community platform featuring real-time discussions, authentication,  progress tracking, location-based job search, and interactive dashboards to help developers learn, collaborate, and advance their careers.',
     stack: ['Next.js', 'Node.js', 'MongoDB', 'Socket.IO', 'TypeScript'],
-    github: 'https://github.com',
-    demo: 'https://example.com',
+    github: 'https://github.com/programmeranamul/skillforge',
+    demo: 'https://skillforge-gzcg03rih-programmeranamuls-projects.vercel.app/',
   },
   {
     title: 'ShopVerse',
@@ -66,9 +75,9 @@ export const projects = [
 
 export const experience = [
   {
-    role: 'Full Stack Developer',
-    company: 'Nimbus Labs (Remote)',
-    period: '2024 — Present',
+    role: 'MERN Stack Developer',
+    company: 'Harry.ai (Remote)',
+    period: '2024 — 2026',
     points: [
       'Designed and shipped REST APIs serving 50k+ monthly active users with 99.9% uptime.',
       'Built reusable React component libraries that cut feature delivery time by 30%.',
@@ -77,7 +86,7 @@ export const experience = [
   },
   {
     role: 'MERN Stack Developer',
-    company: 'Brightwave Solutions (Remote)',
+    company: 'VigilAO (Remote)',
     period: '2023 — 2024',
     points: [
       'Developed full-stack features across the React frontend and Node/Express backend.',
